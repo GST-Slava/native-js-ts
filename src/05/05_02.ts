@@ -1,5 +1,5 @@
 import {GovernmentBuildingsType, HouseType} from "../02-test/02_02";
-import exp from "constants";
+
 
 export const getStreetsTitlesOfGovernmentsBuildings = (buildings: Array<GovernmentBuildingsType>) => {
     return buildings.map(b => b.address.street.title)

@@ -1,5 +1,4 @@
 import {CityType} from "../02-test/02_02";
-import {strictEqual} from "assert";
 import {createMessages, getStreetsTitlesOfGovernmentsBuildings, getStreetsTitlesOfHouses} from "./05_02";
 
 let city: CityType;
