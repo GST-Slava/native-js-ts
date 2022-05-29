@@ -1,5 +1,3 @@
-
-
 export type StreetType = {
     title: string
 }
@@ -10,23 +8,22 @@ export type AddressType = {
 }
 
 export type HouseType = {
-    buildedAt: number
+    id?: number
+    builtAt: number
     repaired: boolean
     address: AddressType
-
-
 }
 
-export type governmentBuildingsType={
-    type: 'HOSPITAL'|'FIRE-STATION'
+export type GovernmentBuildingsType = {
+    type: 'HOSPITAL' | 'FIRE-STATION'
     budget: number
-    staffCount:number
-    address:AddressType
-
+    staffCount: number
+    address: AddressType
 }
+
 export type CityType = {
     title: string
     houses: Array<HouseType>
-    governmentBuildings: Array<governmentBuildingsType>
+    governmentBuildings: Array<GovernmentBuildingsType>
     citizensNUmber: number
 }
